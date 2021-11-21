@@ -10,9 +10,12 @@
 		24806B2E2743E81500841A00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24806B2D2743E81500841A00 /* AppDelegate.swift */; };
 		24806B302743E81500841A00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24806B2F2743E81500841A00 /* SceneDelegate.swift */; };
 		24806B322743E81500841A00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24806B312743E81500841A00 /* ViewController.swift */; };
-		24806B352743E81500841A00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B332743E81500841A00 /* Main.storyboard */; };
 		24806B372743E81800841A00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24806B362743E81800841A00 /* Assets.xcassets */; };
 		24806B3A2743E81800841A00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B382743E81800841A00 /* LaunchScreen.storyboard */; };
+		24806B4527468C7500841A00 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B4427468C7500841A00 /* TabBar.storyboard */; };
+		24806B6C2748DCA300841A00 /* ReadyForQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */; };
+		24806B6E2748DCDD00841A00 /* SelectToolsType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */; };
+		24806B702748DCEE00841A00 /* SelectRegion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		24806B2D2743E81500841A00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24806B2F2743E81500841A00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		24806B312743E81500841A00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		24806B342743E81500841A00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24806B362743E81800841A00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24806B392743E81800841A00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24806B3B2743E81800841A00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24806B4427468C7500841A00 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReadyForQuiz.storyboard; sourceTree = "<group>"; };
+		24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectToolsType.storyboard; sourceTree = "<group>"; };
+		24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectRegion.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		24806B2C2743E81500841A00 /* PokemonDaisuki */ = {
 			isa = PBXGroup;
 			children = (
+				24806B4427468C7500841A00 /* TabBar.storyboard */,
+				24806B43274687A500841A00 /* Quiz */,
+				24806B422746879800841A00 /* ToolDex */,
+				24806B412746878B00841A00 /* PokemonDex */,
 				24806B2D2743E81500841A00 /* AppDelegate.swift */,
 				24806B2F2743E81500841A00 /* SceneDelegate.swift */,
 				24806B312743E81500841A00 /* ViewController.swift */,
-				24806B332743E81500841A00 /* Main.storyboard */,
 				24806B362743E81800841A00 /* Assets.xcassets */,
 				24806B382743E81800841A00 /* LaunchScreen.storyboard */,
 				24806B3B2743E81800841A00 /* Info.plist */,
 			);
 			path = PokemonDaisuki;
+			sourceTree = "<group>";
+		};
+		24806B412746878B00841A00 /* PokemonDex */ = {
+			isa = PBXGroup;
+			children = (
+				24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */,
+			);
+			path = PokemonDex;
+			sourceTree = "<group>";
+		};
+		24806B422746879800841A00 /* ToolDex */ = {
+			isa = PBXGroup;
+			children = (
+				24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */,
+			);
+			path = ToolDex;
+			sourceTree = "<group>";
+		};
+		24806B43274687A500841A00 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */,
+			);
+			path = Quiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +158,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24806B6E2748DCDD00841A00 /* SelectToolsType.storyboard in Resources */,
+				24806B4527468C7500841A00 /* TabBar.storyboard in Resources */,
 				24806B3A2743E81800841A00 /* LaunchScreen.storyboard in Resources */,
 				24806B372743E81800841A00 /* Assets.xcassets in Resources */,
-				24806B352743E81500841A00 /* Main.storyboard in Resources */,
+				24806B6C2748DCA300841A00 /* ReadyForQuiz.storyboard in Resources */,
+				24806B702748DCEE00841A00 /* SelectRegion.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		24806B332743E81500841A00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				24806B342743E81500841A00 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		24806B382743E81800841A00 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +322,7 @@
 				INFOPLIST_FILE = PokemonDaisuki/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +350,7 @@
 				INFOPLIST_FILE = PokemonDaisuki/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
