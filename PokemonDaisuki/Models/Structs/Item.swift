@@ -10,8 +10,14 @@ import Foundation
 // アイテムデータ
 struct PokeItem: Codable {
     let names: [ItemNames]
-    let flavor_text_entries: [FlavorTextEntries]
+    let favorTextEntries: [FlavorTextEntries]
     let sprites: Sprites
+
+    private enum CodingKeys: String, CodingKey {
+        case names = "names"
+        case favorTextEntries = "flavor_text_entries"
+        case sprites = "sprites"
+    }
 
     // MARK: - names
     struct ItemNames: Codable {
@@ -28,7 +34,13 @@ struct PokeItem: Codable {
     struct FlavorTextEntries: Codable {
         let language: FlavorLanguage
         let text: String   //アイテムの解説文
-        let version_group: VersionGroup
+        let versionGroup: VersionGroup
+
+        private enum CodingKeys: String, CodingKey {
+            case language = "language"
+            case text = "text"
+            case versionGroup = "version_group"
+        }
 
         struct FlavorLanguage: Codable {
             let name: String //"ja-Hrkt"
@@ -50,3 +62,4 @@ struct PokeItem: Codable {
         }
     }
 }
+
