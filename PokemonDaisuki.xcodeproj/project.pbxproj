@@ -16,6 +16,10 @@
 		24806B6C2748DCA300841A00 /* ReadyForQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */; };
 		24806B6E2748DCDD00841A00 /* SelectToolsType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */; };
 		24806B702748DCEE00841A00 /* SelectRegion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */; };
+		8A9B7969275B987F004542ED /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7968275B987F004542ED /* Pokemon.swift */; };
+		8A9B796B275B9BC3004542ED /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B796A275B9BC3004542ED /* Region.swift */; };
+		8A9B7997275D0192004542ED /* ItemCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7996275D0192004542ED /* ItemCategories.swift */; };
+		8A9B799A275E37EB004542ED /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7999275E37EB004542ED /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReadyForQuiz.storyboard; sourceTree = "<group>"; };
 		24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectToolsType.storyboard; sourceTree = "<group>"; };
 		24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectRegion.storyboard; sourceTree = "<group>"; };
+		8A9B7968275B987F004542ED /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		8A9B796A275B9BC3004542ED /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		8A9B7996275D0192004542ED /* ItemCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategories.swift; sourceTree = "<group>"; };
+		8A9B7999275E37EB004542ED /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				24806B4427468C7500841A00 /* TabBar.storyboard */,
+				8A7AAD2B2764382800E7E58D /* Models */,
 				24806B43274687A500841A00 /* Quiz */,
 				24806B422746879800841A00 /* ToolDex */,
 				24806B412746878B00841A00 /* PokemonDex */,
@@ -98,6 +107,25 @@
 				24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		8A7AAD2B2764382800E7E58D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A7AAD2C2764384100E7E58D /* Structs */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A7AAD2C2764384100E7E58D /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				8A9B796A275B9BC3004542ED /* Region.swift */,
+				8A9B7968275B987F004542ED /* Pokemon.swift */,
+				8A9B7996275D0192004542ED /* ItemCategories.swift */,
+				8A9B7999275E37EB004542ED /* Item.swift */,
+			);
+			path = Structs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +203,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24806B322743E81500841A00 /* ViewController.swift in Sources */,
+				8A9B7969275B987F004542ED /* Pokemon.swift in Sources */,
 				24806B2E2743E81500841A00 /* AppDelegate.swift in Sources */,
+				8A9B796B275B9BC3004542ED /* Region.swift in Sources */,
+				8A9B799A275E37EB004542ED /* Item.swift in Sources */,
+				8A9B7997275D0192004542ED /* ItemCategories.swift in Sources */,
 				24806B302743E81500841A00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
