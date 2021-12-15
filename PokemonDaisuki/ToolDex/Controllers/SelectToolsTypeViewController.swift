@@ -25,9 +25,9 @@ final class SelectToolsTypeViewController: UIViewController {
         collectionView.register(ToolsTypeCollectionViewCell.nib(), forCellWithReuseIdentifier: ToolsTypeCollectionViewCell.identifire)
         let flowLayout = UICollectionViewFlowLayout()
         let cellWidth = view.frame.width / 2.5
-        // cellの高さ
+        // buttonが正方形になるようにheightは 5/4倍しています。
         flowLayout.itemSize = CGSize(width: cellWidth, height: cellWidth * 5 / 4)
-        flowLayout.sectionInset = UIEdgeInsets(top: 16, left: 30, bottom: 16, right: 30)
+        flowLayout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
         collectionView.collectionViewLayout = flowLayout
     }
 }
