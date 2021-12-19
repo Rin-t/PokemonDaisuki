@@ -12,9 +12,9 @@ final class ToolsTypeCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var toolTypeButton: UIButton!
     @IBOutlet private weak var toolTypeLabel: UILabel!
 
-    static let identifire = "ToolsTypeCollectionViewCell"
+    static let identifier = "ToolsTypeCollectionViewCell"
     static func nib() -> UINib {
-        UINib(nibName: "ToolsTypeCollectionViewCell", bundle: nil)
+        UINib(nibName: identifier, bundle: nil)
     }
 
    private var tappedButton = { () -> Void in }
