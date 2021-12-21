@@ -17,6 +17,9 @@
 		24806B6E2748DCDD00841A00 /* SelectToolsType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */; };
 		24806B702748DCEE00841A00 /* SelectRegion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */; };
 		8A7AAE44276B3FC600E7E58D /* FetchAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AAE43276B3FC600E7E58D /* FetchAPIs.swift */; };
+		24BCB0FC276779F800E15C5B /* ToolsTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BCB0FB276779F800E15C5B /* ToolsTypeCollectionViewCell.swift */; };
+		24BCB0FF27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BCB0FE27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib */; };
+		24BCB10127677C0200E15C5B /* SelectToolsTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */; };
 		8A9B7969275B987F004542ED /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7968275B987F004542ED /* Pokemon.swift */; };
 		8A9B796B275B9BC3004542ED /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B796A275B9BC3004542ED /* Region.swift */; };
 		8A9B7997275D0192004542ED /* ItemCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7996275D0192004542ED /* ItemCategories.swift */; };
@@ -36,6 +39,9 @@
 		24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectToolsType.storyboard; sourceTree = "<group>"; };
 		24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectRegion.storyboard; sourceTree = "<group>"; };
 		8A7AAE43276B3FC600E7E58D /* FetchAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAPIs.swift; sourceTree = "<group>"; };
+		24BCB0FB276779F800E15C5B /* ToolsTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		24BCB0FE27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolsTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectToolsTypeViewController.swift; sourceTree = "<group>"; };
 		8A9B7968275B987F004542ED /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		8A9B796A275B9BC3004542ED /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		8A9B7996275D0192004542ED /* ItemCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategories.swift; sourceTree = "<group>"; };
@@ -98,7 +104,8 @@
 		24806B422746879800841A00 /* ToolDex */ = {
 			isa = PBXGroup;
 			children = (
-				24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */,
+				24BCB10327677C1D00E15C5B /* Controllers */,
+				24BCB10227677C0A00E15C5B /* Views */,
 			);
 			path = ToolDex;
 			sourceTree = "<group>";
@@ -109,6 +116,32 @@
 				24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		24BCB0FD27677A5C00E15C5B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				24BCB0FB276779F800E15C5B /* ToolsTypeCollectionViewCell.swift */,
+				24BCB0FE27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		24BCB10227677C0A00E15C5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */,
+				24BCB0FD27677A5C00E15C5B /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24BCB10327677C1D00E15C5B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		8A7AAD2B2764382800E7E58D /* Models */ = {
@@ -195,6 +228,7 @@
 				24806B372743E81800841A00 /* Assets.xcassets in Resources */,
 				24806B6C2748DCA300841A00 /* ReadyForQuiz.storyboard in Resources */,
 				24806B702748DCEE00841A00 /* SelectRegion.storyboard in Resources */,
+				24BCB0FF27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,9 +242,11 @@
 				24806B322743E81500841A00 /* ViewController.swift in Sources */,
 				8A7AAE44276B3FC600E7E58D /* FetchAPIs.swift in Sources */,
 				8A9B7969275B987F004542ED /* Pokemon.swift in Sources */,
+				24BCB0FC276779F800E15C5B /* ToolsTypeCollectionViewCell.swift in Sources */,
 				24806B2E2743E81500841A00 /* AppDelegate.swift in Sources */,
 				8A9B796B275B9BC3004542ED /* Region.swift in Sources */,
 				8A9B799A275E37EB004542ED /* PokeItem.swift in Sources */,
+				24BCB10127677C0200E15C5B /* SelectToolsTypeViewController.swift in Sources */,
 				8A9B7997275D0192004542ED /* ItemCategories.swift in Sources */,
 				24806B302743E81500841A00 /* SceneDelegate.swift in Sources */,
 			);
