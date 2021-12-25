@@ -9,9 +9,9 @@ import Foundation
 
 struct FetchAPIs {
 
-    private let itemCategoryIDRange = 1...46 // アイテムカテゴリは46個
-    private let pokemonIDRange = 1...151 // クイズ用のポケモンデータ151の夢
-    private let regionIDRange = 1...8 // 8地域
+    private static let itemCategoryIDRange = 1...46 // アイテムカテゴリは46個
+    private static let pokemonIDRange = 1...151 // クイズ用のポケモンデータ151の夢
+    private static let regionIDRange = 1...8 // 8地域
 
     // APIを叩く際の項目
     enum TypeOfFetch {
@@ -114,9 +114,9 @@ struct FetchAPIs {
         let range: ClosedRange<Int>
 
         switch typeOfFetch {
-        case .itemCategories: range = FetchAPIs().itemCategoryIDRange
-        case .pokemon: range = FetchAPIs().pokemonIDRange
-        case .region: range = FetchAPIs().regionIDRange
+        case .itemCategories: range = itemCategoryIDRange
+        case .pokemon: range = pokemonIDRange
+        case .region: range = regionIDRange
         }
 
         return range
