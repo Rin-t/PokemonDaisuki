@@ -22,7 +22,7 @@ final class SelectToolsTypeViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(ToolsTypeCollectionViewCell.nib(), forCellWithReuseIdentifier: ToolsTypeCollectionViewCell.identifire)
+        collectionView.register(ToolsTypeCollectionViewCell.nib(), forCellWithReuseIdentifier: ToolsTypeCollectionViewCell.identifier)
         let flowLayout = UICollectionViewFlowLayout()
         let cellWidth = view.frame.width / 2.5
         // buttonが正方形になるようにheightは 5/4倍しています。
@@ -38,7 +38,7 @@ extension SelectToolsTypeViewController: UICollectionViewDelegate, UICollectionV
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ToolsTypeCollectionViewCell.identifire, for: indexPath) as! ToolsTypeCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ToolsTypeCollectionViewCell.identifier, for: indexPath) as! ToolsTypeCollectionViewCell
         cell.configure(title: "ボール", cellCornerRadius: view.frame.width / 5) {
             print(indexPath)
         }
