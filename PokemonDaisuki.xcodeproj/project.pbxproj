@@ -16,10 +16,12 @@
 		24806B6C2748DCA300841A00 /* ReadyForQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */; };
 		24806B6E2748DCDD00841A00 /* SelectToolsType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */; };
 		24806B702748DCEE00841A00 /* SelectRegion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */; };
-		8A7AAE44276B3FC600E7E58D /* FetchAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AAE43276B3FC600E7E58D /* FetchAPIs.swift */; };
 		24BCB0FC276779F800E15C5B /* ToolsTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BCB0FB276779F800E15C5B /* ToolsTypeCollectionViewCell.swift */; };
 		24BCB0FF27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BCB0FE27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib */; };
 		24BCB10127677C0200E15C5B /* SelectToolsTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */; };
+		8A146D43277D77F400220F40 /* RegionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A146D41277D77F400220F40 /* RegionViewCell.swift */; };
+		8A146D44277D77F400220F40 /* RegionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A146D42277D77F400220F40 /* RegionViewCell.xib */; };
+		8A7AAE44276B3FC600E7E58D /* FetchAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AAE43276B3FC600E7E58D /* FetchAPIs.swift */; };
 		8A9B7969275B987F004542ED /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7968275B987F004542ED /* Pokemon.swift */; };
 		8A9B796B275B9BC3004542ED /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B796A275B9BC3004542ED /* Region.swift */; };
 		8A9B7997275D0192004542ED /* ItemCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7996275D0192004542ED /* ItemCategories.swift */; };
@@ -38,10 +40,12 @@
 		24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReadyForQuiz.storyboard; sourceTree = "<group>"; };
 		24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectToolsType.storyboard; sourceTree = "<group>"; };
 		24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectRegion.storyboard; sourceTree = "<group>"; };
-		8A7AAE43276B3FC600E7E58D /* FetchAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAPIs.swift; sourceTree = "<group>"; };
 		24BCB0FB276779F800E15C5B /* ToolsTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		24BCB0FE27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolsTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectToolsTypeViewController.swift; sourceTree = "<group>"; };
+		8A146D41277D77F400220F40 /* RegionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewCell.swift; sourceTree = "<group>"; };
+		8A146D42277D77F400220F40 /* RegionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionViewCell.xib; sourceTree = "<group>"; };
+		8A7AAE43276B3FC600E7E58D /* FetchAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAPIs.swift; sourceTree = "<group>"; };
 		8A9B7968275B987F004542ED /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		8A9B796A275B9BC3004542ED /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		8A9B7996275D0192004542ED /* ItemCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategories.swift; sourceTree = "<group>"; };
@@ -96,7 +100,7 @@
 		24806B412746878B00841A00 /* PokemonDex */ = {
 			isa = PBXGroup;
 			children = (
-				24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */,
+				8A146D3F277D76C300220F40 /* Views */,
 			);
 			path = PokemonDex;
 			sourceTree = "<group>";
@@ -142,6 +146,24 @@
 				24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A146D3F277D76C300220F40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */,
+				8A146D40277D77CF00220F40 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A146D40277D77CF00220F40 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8A146D41277D77F400220F40 /* RegionViewCell.swift */,
+				8A146D42277D77F400220F40 /* RegionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		8A7AAD2B2764382800E7E58D /* Models */ = {
@@ -224,6 +246,7 @@
 			files = (
 				24806B6E2748DCDD00841A00 /* SelectToolsType.storyboard in Resources */,
 				24806B4527468C7500841A00 /* TabBar.storyboard in Resources */,
+				8A146D44277D77F400220F40 /* RegionViewCell.xib in Resources */,
 				24806B3A2743E81800841A00 /* LaunchScreen.storyboard in Resources */,
 				24806B372743E81800841A00 /* Assets.xcassets in Resources */,
 				24806B6C2748DCA300841A00 /* ReadyForQuiz.storyboard in Resources */,
@@ -239,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A146D43277D77F400220F40 /* RegionViewCell.swift in Sources */,
 				24806B322743E81500841A00 /* ViewController.swift in Sources */,
 				8A7AAE44276B3FC600E7E58D /* FetchAPIs.swift in Sources */,
 				8A9B7969275B987F004542ED /* Pokemon.swift in Sources */,
