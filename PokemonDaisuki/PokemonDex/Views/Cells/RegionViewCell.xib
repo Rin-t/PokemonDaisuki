@@ -26,9 +26,6 @@
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhS-FP-HtP">
                         <rect key="frame" x="0.0" y="187" width="240" height="47"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="47" id="e9M-zN-wkx"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -37,14 +34,14 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="AhS-FP-HtP" firstAttribute="top" secondItem="zzY-Jb-1da" secondAttribute="bottom" id="42w-1V-apF"/>
-                <constraint firstItem="AhS-FP-HtP" firstAttribute="top" secondItem="zzY-Jb-1da" secondAttribute="bottom" id="4FK-6H-Pfd"/>
-                <constraint firstItem="zzY-Jb-1da" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ghm-G8-wwB"/>
-                <constraint firstItem="zzY-Jb-1da" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gsg-09-QZr"/>
-                <constraint firstAttribute="bottom" secondItem="AhS-FP-HtP" secondAttribute="bottom" id="QyB-90-SvH"/>
-                <constraint firstAttribute="trailing" secondItem="AhS-FP-HtP" secondAttribute="trailing" id="Tzz-ix-ijG"/>
-                <constraint firstItem="AhS-FP-HtP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mKL-jn-Eku"/>
-                <constraint firstAttribute="trailing" secondItem="zzY-Jb-1da" secondAttribute="trailing" id="mPJ-Ml-Yw0"/>
+                <constraint firstAttribute="trailing" secondItem="AhS-FP-HtP" secondAttribute="trailing" id="J0I-dd-tAD"/>
+                <constraint firstAttribute="trailing" secondItem="zzY-Jb-1da" secondAttribute="trailing" id="OQu-aA-4X2"/>
+                <constraint firstItem="AhS-FP-HtP" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.2" id="UIg-e1-fek"/>
+                <constraint firstItem="AhS-FP-HtP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XXP-Lu-Ptd"/>
+                <constraint firstItem="zzY-Jb-1da" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="chg-gu-CPW"/>
+                <constraint firstItem="AhS-FP-HtP" firstAttribute="top" secondItem="zzY-Jb-1da" secondAttribute="bottom" id="g9T-6C-MUY"/>
+                <constraint firstItem="zzY-Jb-1da" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mtN-nQ-5pE"/>
+                <constraint firstAttribute="bottom" secondItem="AhS-FP-HtP" secondAttribute="bottom" id="vtj-ey-pOx"/>
             </constraints>
             <size key="customSize" width="240" height="235"/>
             <connections>
