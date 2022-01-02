@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RegionViewCell" id="gTV-IL-0wX" customClass="RegionViewCell" customModule="PokemonDaisuki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="234"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="234"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzY-Jb-1da">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="187"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        <connections>
+                            <action selector="tappedRegionButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dAp-kR-IKF"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhS-FP-HtP">
+                        <rect key="frame" x="0.0" y="187" width="240" height="47"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AhS-FP-HtP" secondAttribute="trailing" id="J0I-dd-tAD"/>
+                <constraint firstAttribute="trailing" secondItem="zzY-Jb-1da" secondAttribute="trailing" id="OQu-aA-4X2"/>
+                <constraint firstItem="AhS-FP-HtP" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.2" id="UIg-e1-fek"/>
+                <constraint firstItem="AhS-FP-HtP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XXP-Lu-Ptd"/>
+                <constraint firstItem="zzY-Jb-1da" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="chg-gu-CPW"/>
+                <constraint firstItem="AhS-FP-HtP" firstAttribute="top" secondItem="zzY-Jb-1da" secondAttribute="bottom" id="g9T-6C-MUY"/>
+                <constraint firstItem="zzY-Jb-1da" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mtN-nQ-5pE"/>
+                <constraint firstAttribute="bottom" secondItem="AhS-FP-HtP" secondAttribute="bottom" id="vtj-ey-pOx"/>
+            </constraints>
+            <size key="customSize" width="240" height="235"/>
+            <connections>
+                <outlet property="regionButton" destination="zzY-Jb-1da" id="aOa-1k-0zd"/>
+                <outlet property="regionLabel" destination="AhS-FP-HtP" id="MD6-Qt-l8X"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="131.91964285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
