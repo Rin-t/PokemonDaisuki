@@ -25,7 +25,7 @@
 		8A7AAE44276B3FC600E7E58D /* FetchAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AAE43276B3FC600E7E58D /* FetchAPIs.swift */; };
 		8A9B7969275B987F004542ED /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7968275B987F004542ED /* Pokemon.swift */; };
 		8A9B796B275B9BC3004542ED /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B796A275B9BC3004542ED /* Region.swift */; };
-		8A9B7997275D0192004542ED /* ItemCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7996275D0192004542ED /* ItemCategories.swift */; };
+		8A9B7997275D0192004542ED /* ItemPocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7996275D0192004542ED /* ItemPocket.swift */; };
 		8A9B799A275E37EB004542ED /* PokeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7999275E37EB004542ED /* PokeItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +50,7 @@
 		8A7AAE43276B3FC600E7E58D /* FetchAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAPIs.swift; sourceTree = "<group>"; };
 		8A9B7968275B987F004542ED /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		8A9B796A275B9BC3004542ED /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
-		8A9B7996275D0192004542ED /* ItemCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategories.swift; sourceTree = "<group>"; };
+		8A9B7996275D0192004542ED /* ItemPocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPocket.swift; sourceTree = "<group>"; };
 		8A9B7999275E37EB004542ED /* PokeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,7 +191,7 @@
 			children = (
 				8A9B796A275B9BC3004542ED /* Region.swift */,
 				8A9B7968275B987F004542ED /* Pokemon.swift */,
-				8A9B7996275D0192004542ED /* ItemCategories.swift */,
+				8A9B7996275D0192004542ED /* ItemPocket.swift */,
 				8A9B7999275E37EB004542ED /* PokeItem.swift */,
 			);
 			path = Structs;
@@ -283,7 +283,7 @@
 				8A9B799A275E37EB004542ED /* PokeItem.swift in Sources */,
 				8A146D47277D86F500220F40 /* RegionViewController.swift in Sources */,
 				24BCB10127677C0200E15C5B /* SelectToolsTypeViewController.swift in Sources */,
-				8A9B7997275D0192004542ED /* ItemCategories.swift in Sources */,
+				8A9B7997275D0192004542ED /* ItemPocket.swift in Sources */,
 				24806B302743E81500841A00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
