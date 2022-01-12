@@ -9,7 +9,7 @@ import Foundation
 
 struct FetchAPIs {
 
-    private static let itemCategoryIDRange = 1...46 // アイテムカテゴリは46個
+    private static let itemCategoryIDRange = 1...8 // アイテムカテゴリは46個
     private static let pokemonIDRange = 1...151 // クイズ用のポケモンデータ151の夢
     private static let regionIDRange = 1...8 // 8地域
 
@@ -40,14 +40,14 @@ struct FetchAPIs {
     }
 
     // アイテムカテゴリーのJSONデータを取得
-   static func decodeItemCategoriesData(completion: @escaping ([ItemCategories]) -> Void) {
+   static func decodeItemCategoriesData(completion: @escaping ([ItemPocket]) -> Void) {
 
          FetchAPIs.fetchData(typeOfFetch: .itemCategories) { dataArray in
-            var jsons: [ItemCategories] = []
+            var jsons: [ItemPocket] = []
 
             for data in dataArray {
                 do {
-                    let json = try JSONDecoder().decode(ItemCategories.self, from: data)
+                    let json = try JSONDecoder().decode(ItemPocket.self, from: data)
                     jsons.append(json)
                 } catch(let err) {
                     print(err)
@@ -129,7 +129,7 @@ struct FetchAPIs {
 
             let url: String
             switch typeOfFetch {
-            case .itemCategories: url = "https://pokeapi.co/api/v2/item-category/\(id)/"
+            case .itemCategories: url = "https://pokeapi.co/api/v2/item-pocket/\(id)/"
             case .pokemon: url = "https://pokeapi.co/api/v2/pokemon/\(id)/"
             case .region: url = "https://pokeapi.co/api/v2/region/\(id)/"
             }

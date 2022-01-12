@@ -16,6 +16,9 @@ final class SelectToolsTypeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        FetchAPIs.decodeItemCategoriesData { items in
+            print(items)
+        }
     }
 
     // Methods
