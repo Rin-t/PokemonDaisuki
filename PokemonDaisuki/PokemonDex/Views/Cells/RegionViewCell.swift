@@ -21,7 +21,7 @@ class RegionViewCell: UICollectionViewCell {
     private var tappedButton = { () -> Void in }
 
     func configure(title: String, cellCornerRadius: CGFloat, tappedButton: @escaping () -> Void) {
-        regionLabel.text = title
+        regionLabel.text = translateRegionToJPFromEng(title: title)
         regionLabel.textColor = .black
         regionButton.backgroundColor = .systemBlue
         regionButton.tintColor = .white
@@ -33,4 +33,14 @@ class RegionViewCell: UICollectionViewCell {
         tappedButton()
     }
 
+    // APIにalolaとgalarの日本語情報がないため変換する
+    func translateRegionToJPFromEng(title: String) -> String {
+        if title == "Alola" {
+            return "アローラ地方"
+        } else if title == "Galar" {
+            return "ガラル地方"
+        } else {
+            return title
+        }
+    }
 }
