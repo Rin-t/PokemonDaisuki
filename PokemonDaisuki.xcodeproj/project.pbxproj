@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		247A85A4279407F6003B1F57 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A85A3279407F6003B1F57 /* APIError.swift */; };
 		24806B2E2743E81500841A00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24806B2D2743E81500841A00 /* AppDelegate.swift */; };
 		24806B302743E81500841A00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24806B2F2743E81500841A00 /* SceneDelegate.swift */; };
 		24806B322743E81500841A00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24806B312743E81500841A00 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		247A85A3279407F6003B1F57 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		24806B2A2743E81500841A00 /* PokemonDaisuki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonDaisuki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24806B2D2743E81500841A00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24806B2F2743E81500841A00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		247A85A2279407D2003B1F57 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				247A85A3279407F6003B1F57 /* APIError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		24806B212743E81500841A00 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				24806B4427468C7500841A00 /* TabBar.storyboard */,
+				247A85A2279407D2003B1F57 /* Error */,
 				8A7AAD2B2764382800E7E58D /* Models */,
 				24806B43274687A500841A00 /* Quiz */,
 				24806B422746879800841A00 /* ToolDex */,
@@ -285,6 +296,7 @@
 				24BCB10127677C0200E15C5B /* SelectToolsTypeViewController.swift in Sources */,
 				8A9B7997275D0192004542ED /* ItemPocket.swift in Sources */,
 				24806B302743E81500841A00 /* SceneDelegate.swift in Sources */,
+				247A85A4279407F6003B1F57 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
