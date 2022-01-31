@@ -71,6 +71,7 @@ struct FetchAPIs {
                     print(err)
                 }
             }
+            jsons.sort(by: { $0.id < $1.id })
             completion(jsons)
         }
     }
@@ -134,6 +135,67 @@ struct FetchAPIs {
             case .region: url = "https://pokeapi.co/api/v2/region/\(id)/"
             }
             return url
+        }
+        return urls
+    }
+
+   static func fetchDataFromRegionAPI(regionIndex: Int, completion: @escaping ([Pokemon]) -> Void) {
+
+        let stringURLs = switchURL(index: regionIndex)
+        var pokemonArray: [Pokemon] = []
+
+        // URLRequest型にstringURLsを変換
+        let urls = stringURLs.map { stringURL in
+            URL(string: stringURL)
+        }
+
+        // urlsからurlという名で一つずつdataを取り出してdataArrayに追加
+        for url in urls {
+            let task = URLSession.shared.dataTask(with: url!) { data, response, error in
+
+                if let error = error {
+                    print(error)
+                    return
+                }
+
+                if let data = data {
+                    do {
+                        let json = try JSONDecoder().decode(Pokemon.self, from: data)
+                        pokemonArray.append(json)
+                    } catch(let err) {
+                        print(err)
+                    }
+                }
+
+                if pokemonArray.count == urls.count {
+                    pokemonArray.sort(by: { $0.id < $1.id })
+                    completion(pokemonArray)
+                }
+            }
+            task.resume()
+        }
+    }
+
+   static func switchIDRangeForURL(index: Int) -> [String] {
+
+        let range: ClosedRange<Int>
+        var urls: [String] = []
+
+        switch index {
+        case 0: range = 1...151
+        case 1: range = 152...251
+        case 2: range = 252...386
+        case 3: range = 387...493
+        case 4: range = 494...649
+        case 5: range = 650...721
+        case 6: range = 722...807
+        case 7: range = 810...898
+        default: range = 0...0
+        }
+
+        for i in range {
+            let url = "https://pokeapi.co/api/v2/pokemon/\(i)/"
+            urls.append(url)
         }
         return urls
     }
