@@ -17,7 +17,7 @@
 		24806B6C2748DCA300841A00 /* ReadyForQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */; };
 		24806B6E2748DCDD00841A00 /* SelectToolsType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */; };
 		24806B702748DCEE00841A00 /* SelectRegion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */; };
-		24BCB0FC276779F800E15C5B /* ToolsTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BCB0FB276779F800E15C5B /* ToolsTypeCollectionViewCell.swift */; };
+		24BCB0FC276779F800E15C5B /* ballCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BCB0FB276779F800E15C5B /* ballCollectionCollectionViewCell.swift */; };
 		24BCB0FF27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BCB0FE27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib */; };
 		24BCB10127677C0200E15C5B /* SelectToolsTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */; };
 		8A146D43277D77F400220F40 /* RegionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A146D41277D77F400220F40 /* RegionViewCell.swift */; };
@@ -26,8 +26,9 @@
 		8A7AAE44276B3FC600E7E58D /* FetchAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AAE43276B3FC600E7E58D /* FetchAPIs.swift */; };
 		8A9B7969275B987F004542ED /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7968275B987F004542ED /* Pokemon.swift */; };
 		8A9B796B275B9BC3004542ED /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B796A275B9BC3004542ED /* Region.swift */; };
-		8A9B7997275D0192004542ED /* ItemPocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7996275D0192004542ED /* ItemPocket.swift */; };
+		8A9B7997275D0192004542ED /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7996275D0192004542ED /* Ball.swift */; };
 		8A9B799A275E37EB004542ED /* PokeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B7999275E37EB004542ED /* PokeItem.swift */; };
+		CE11DD758520FCFAEE131704 /* Pods_PokemonDaisuki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FDB55C40319A47938F7E5A /* Pods_PokemonDaisuki.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,17 +44,20 @@
 		24806B6B2748DCA300841A00 /* ReadyForQuiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReadyForQuiz.storyboard; sourceTree = "<group>"; };
 		24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectToolsType.storyboard; sourceTree = "<group>"; };
 		24806B6F2748DCEE00841A00 /* SelectRegion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectRegion.storyboard; sourceTree = "<group>"; };
-		24BCB0FB276779F800E15C5B /* ToolsTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		24BCB0FB276779F800E15C5B /* ballCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ballCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		24BCB0FE27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolsTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectToolsTypeViewController.swift; sourceTree = "<group>"; };
+		2DEE2F0B7C8E7F8267188B02 /* Pods-PokemonDaisuki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonDaisuki.release.xcconfig"; path = "Target Support Files/Pods-PokemonDaisuki/Pods-PokemonDaisuki.release.xcconfig"; sourceTree = "<group>"; };
 		8A146D41277D77F400220F40 /* RegionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewCell.swift; sourceTree = "<group>"; };
 		8A146D42277D77F400220F40 /* RegionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionViewCell.xib; sourceTree = "<group>"; };
 		8A146D46277D86F500220F40 /* RegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
 		8A7AAE43276B3FC600E7E58D /* FetchAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAPIs.swift; sourceTree = "<group>"; };
 		8A9B7968275B987F004542ED /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		8A9B796A275B9BC3004542ED /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
-		8A9B7996275D0192004542ED /* ItemPocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPocket.swift; sourceTree = "<group>"; };
+		8A9B7996275D0192004542ED /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 		8A9B7999275E37EB004542ED /* PokeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeItem.swift; sourceTree = "<group>"; };
+		985E1F85A5DE58A636ABC47A /* Pods-PokemonDaisuki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonDaisuki.debug.xcconfig"; path = "Target Support Files/Pods-PokemonDaisuki/Pods-PokemonDaisuki.debug.xcconfig"; sourceTree = "<group>"; };
+		B0FDB55C40319A47938F7E5A /* Pods_PokemonDaisuki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonDaisuki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE11DD758520FCFAEE131704 /* Pods_PokemonDaisuki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,8 @@
 			children = (
 				24806B2C2743E81500841A00 /* PokemonDaisuki */,
 				24806B2B2743E81500841A00 /* Products */,
+				D665E77D00035E2AEFB10CA1 /* Pods */,
+				256510A3D2D8E73B1A4FF5DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,7 +146,7 @@
 		24BCB0FD27677A5C00E15C5B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				24BCB0FB276779F800E15C5B /* ToolsTypeCollectionViewCell.swift */,
+				24BCB0FB276779F800E15C5B /* ballCollectionCollectionViewCell.swift */,
 				24BCB0FE27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib */,
 			);
 			path = Cells;
@@ -160,6 +167,14 @@
 				24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		256510A3D2D8E73B1A4FF5DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0FDB55C40319A47938F7E5A /* Pods_PokemonDaisuki.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8A146D3F277D76C300220F40 /* Views */ = {
@@ -202,10 +217,19 @@
 			children = (
 				8A9B796A275B9BC3004542ED /* Region.swift */,
 				8A9B7968275B987F004542ED /* Pokemon.swift */,
-				8A9B7996275D0192004542ED /* ItemPocket.swift */,
+				8A9B7996275D0192004542ED /* Ball.swift */,
 				8A9B7999275E37EB004542ED /* PokeItem.swift */,
 			);
 			path = Structs;
+			sourceTree = "<group>";
+		};
+		D665E77D00035E2AEFB10CA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				985E1F85A5DE58A636ABC47A /* Pods-PokemonDaisuki.debug.xcconfig */,
+				2DEE2F0B7C8E7F8267188B02 /* Pods-PokemonDaisuki.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24806B3E2743E81800841A00 /* Build configuration list for PBXNativeTarget "PokemonDaisuki" */;
 			buildPhases = (
+				26D726C3129B1B27965DC1AB /* [CP] Check Pods Manifest.lock */,
 				24806B262743E81500841A00 /* Sources */,
 				24806B272743E81500841A00 /* Frameworks */,
 				24806B282743E81500841A00 /* Resources */,
+				E15993AC4BC5C6F0F538ED13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,6 +305,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26D726C3129B1B27965DC1AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokemonDaisuki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E15993AC4BC5C6F0F538ED13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokemonDaisuki/Pods-PokemonDaisuki-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokemonDaisuki/Pods-PokemonDaisuki-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokemonDaisuki/Pods-PokemonDaisuki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		24806B262743E81500841A00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -288,13 +356,13 @@
 				24806B322743E81500841A00 /* ViewController.swift in Sources */,
 				8A7AAE44276B3FC600E7E58D /* FetchAPIs.swift in Sources */,
 				8A9B7969275B987F004542ED /* Pokemon.swift in Sources */,
-				24BCB0FC276779F800E15C5B /* ToolsTypeCollectionViewCell.swift in Sources */,
+				24BCB0FC276779F800E15C5B /* ballCollectionCollectionViewCell.swift in Sources */,
 				24806B2E2743E81500841A00 /* AppDelegate.swift in Sources */,
 				8A9B796B275B9BC3004542ED /* Region.swift in Sources */,
 				8A9B799A275E37EB004542ED /* PokeItem.swift in Sources */,
 				8A146D47277D86F500220F40 /* RegionViewController.swift in Sources */,
 				24BCB10127677C0200E15C5B /* SelectToolsTypeViewController.swift in Sources */,
-				8A9B7997275D0192004542ED /* ItemPocket.swift in Sources */,
+				8A9B7997275D0192004542ED /* Ball.swift in Sources */,
 				24806B302743E81500841A00 /* SceneDelegate.swift in Sources */,
 				247A85A4279407F6003B1F57 /* APIError.swift in Sources */,
 			);
@@ -432,6 +500,7 @@
 		};
 		24806B3F2743E81800841A00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985E1F85A5DE58A636ABC47A /* Pods-PokemonDaisuki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +529,7 @@
 		};
 		24806B402743E81800841A00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DEE2F0B7C8E7F8267188B02 /* Pods-PokemonDaisuki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
