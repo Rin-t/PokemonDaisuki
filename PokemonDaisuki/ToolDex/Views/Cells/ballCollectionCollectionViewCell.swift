@@ -33,10 +33,19 @@ final class ballCollectionCollectionViewCell: UICollectionViewCell {
 
     func configure(title: String, cellCornerRadius: CGFloat, imageURL: URL?, tappedButton: @escaping () -> Void) {
         ballName.text = title
+
+        let sizeTransformer = SDImageResizingTransformer(size: CGSize(width: 100, height: 100),scaleMode: .aspectFill)
+        let pipeLineTransformer = SDImagePipelineTransformer(transformers: [sizeTransformer])
+        ballButton.sd_setImage(with: imageURL, for: .normal, placeholderImage: nil, options: SDWebImageOptions(), context: [.imageTransformer: pipeLineTransformer])
         ballButton.layer.cornerRadius = cellCornerRadius
-        ballButton.sd_setImage(with: imageURL, for: .normal, completed: nil)
+
         self.tappedButton = tappedButton
     }
+
+    private func configureButton() {
+
+    }
+
 
     @IBAction private func tappedButton(_ sender: UIButton) {
         tappedButton()
