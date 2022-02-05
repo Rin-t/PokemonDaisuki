@@ -42,11 +42,6 @@ final class ballCollectionCollectionViewCell: UICollectionViewCell {
         self.tappedButton = tappedButton
     }
 
-    private func configureButton() {
-
-    }
-
-
     @IBAction private func tappedButton(_ sender: UIButton) {
         tappedButton()
     }
