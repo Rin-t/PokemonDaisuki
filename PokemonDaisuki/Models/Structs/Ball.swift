@@ -8,12 +8,11 @@
 import Foundation
 
 // アイテムのカテゴリとカテゴリ別の一覧を取得できるURL
-struct ItemPocket: Codable {
+struct Ball: Codable {
     let name: String 
-    let categories: [Category]
+    let sprites: BallImage
+}
 
-    struct Category: Codable {
-        let name: String
-        let url: String //アイテムデータのURL
-    }
+struct BallImage: Codable {
+    let `default`: String
 }

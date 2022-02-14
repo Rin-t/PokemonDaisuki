@@ -9,13 +9,13 @@ import Foundation
 
 struct FetchAPIs {
 
-    private static let itemCategoryIDRange = 1...8 // アイテムカテゴリは8種類
+    private static let ballIdRange = 1...16 // ボールの種類
     private static let pokemonIDRange = 1...151 // クイズ用のポケモンデータは151種類
     private static let regionIDRange = 1...8 // 地域は8種類
 
     // APIを叩く際の項目
     enum TypeOfFetch {
-        case itemCategories
+        case ball
         case pokemon
         case region
     }
@@ -40,14 +40,14 @@ struct FetchAPIs {
     }
 
     // アイテムカテゴリーのJSONデータを取得
-   static func decodeItemCategoriesData(completion: @escaping ([ItemPocket]) -> Void) {
+   static func decodeBallData(completion: @escaping ([Ball]) -> Void) {
 
-         FetchAPIs.fetchData(typeOfFetch: .itemCategories) { dataArray in
-            var jsons: [ItemPocket] = []
+         FetchAPIs.fetchData(typeOfFetch: .ball) { dataArray in
+            var jsons: [Ball] = []
 
             for data in dataArray {
                 do {
-                    let json = try JSONDecoder().decode(ItemPocket.self, from: data)
+                    let json = try JSONDecoder().decode(Ball.self, from: data)
                     jsons.append(json)
                 } catch(let err) {
                     print(err)
@@ -114,7 +114,7 @@ struct FetchAPIs {
         let range: ClosedRange<Int>
 
         switch typeOfFetch {
-        case .itemCategories: range = itemCategoryIDRange
+        case .ball: range = ballIdRange
         case .pokemon: range = pokemonIDRange
         case .region: range = regionIDRange
         }
@@ -129,7 +129,7 @@ struct FetchAPIs {
 
             let url: String
             switch typeOfFetch {
-            case .itemCategories: url = "https://pokeapi.co/api/v2/item-pocket/\(id)/"
+            case .ball: url = "https://pokeapi.co/api/v2/item/\(id)/"
             case .pokemon: url = "https://pokeapi.co/api/v2/pokemon/\(id)/"
             case .region: url = "https://pokeapi.co/api/v2/region/\(id)/"
             }

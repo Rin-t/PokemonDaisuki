@@ -12,12 +12,21 @@ final class SelectToolsTypeViewController: UIViewController {
     // Propaties
     @IBOutlet private weak var collectionView: UICollectionView!
 
+    private var balls = [Ball]()
+
     // Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
-        FetchAPIs.decodeItemCategoriesData { items in
-            print(items)
+        fetchBallData()
+    }
+
+    private func fetchBallData() {
+        FetchAPIs.decodeBallData { [weak self] balls in
+            self?.balls = balls
+            DispatchQueue.main.async {
+                self?.collectionView.reloadData()
+            }
         }
     }
 
@@ -25,7 +34,7 @@ final class SelectToolsTypeViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(ToolsTypeCollectionViewCell.nib(), forCellWithReuseIdentifier: ToolsTypeCollectionViewCell.identifier)
+        collectionView.register(ballCollectionCollectionViewCell.nib(), forCellWithReuseIdentifier: ballCollectionCollectionViewCell.identifier)
         let flowLayout = UICollectionViewFlowLayout()
         let cellWidth = view.frame.width / 2.5
         // buttonが正方形になるようにheightは 5/4倍しています。
@@ -37,12 +46,13 @@ final class SelectToolsTypeViewController: UIViewController {
 
 extension SelectToolsTypeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        balls.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ToolsTypeCollectionViewCell.identifier, for: indexPath) as! ToolsTypeCollectionViewCell
-        cell.configure(title: "ボール", cellCornerRadius: view.frame.width / 5) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ballCollectionCollectionViewCell.identifier, for: indexPath) as! ballCollectionCollectionViewCell
+        let imageURL = URL(string: balls[indexPath.row].sprites.default)
+        cell.configure(title: balls[indexPath.row].name, cellCornerRadius: view.frame.width / 5, imageURL: imageURL) {
             print(indexPath)
         }
         return cell
