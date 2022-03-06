@@ -15,15 +15,19 @@ final class SelectQuizHomeViewController: UIViewController {
     }
 
     @objc private func didTapButton() {
-        let vc = QuizViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        present(nav, animated: true, completion: nil)
+        showQuizVC()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+
+    private func showQuizVC() {
+        let vc = QuizViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true, completion: nil)
     }
 }

@@ -123,6 +123,13 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		1C724A5B27D49F8E0034C8AA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		247A85A2279407D2003B1F57 /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +160,7 @@
 				24806B4427468C7500841A00 /* TabBar.storyboard */,
 				247A85A2279407D2003B1F57 /* Error */,
 				8A7AAD2B2764382800E7E58D /* Models */,
+				1C724A5B27D49F8E0034C8AA /* Extension */,
 				24806B43274687A500841A00 /* Quiz */,
 				24806B422746879800841A00 /* ToolDex */,
 				24806B412746878B00841A00 /* PokemonDex */,
