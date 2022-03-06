@@ -7,8 +7,7 @@
 
 import UIKit
 
-final class ReadyForQuiz: UIViewController {
-
+final class SelectQuizHomeViewController: UIViewController {
     @IBOutlet private weak var startQuizButton: UIButton! {
         didSet{
             startQuizButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
@@ -16,7 +15,7 @@ final class ReadyForQuiz: UIViewController {
     }
 
     @objc private func didTapButton() {
-        let vc = TestQuizViewController()
+        let vc = QuizViewController()
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .fullScreen
         present(nav, animated: true, completion: nil)
