@@ -52,6 +52,7 @@ private extension BallDetailViewController {
 
         descriptionTextView.layer.borderColor = UIColor.black.cgColor
         descriptionTextView.layer.borderWidth = 1
+        descriptionTextView.text = ball.effectEntries[0].effect
 
         let imageURL = URL(string: ball.sprites.default)
         ballImageView.sd_setImage(with: imageURL, completed: nil)
