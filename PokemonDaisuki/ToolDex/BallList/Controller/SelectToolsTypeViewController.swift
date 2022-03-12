@@ -9,7 +9,7 @@ import UIKit
 
 final class SelectToolsTypeViewController: UIViewController {
 
-    // Propaties
+    // Properties
     @IBOutlet private weak var collectionView: UICollectionView!
 
     private var balls = [Ball]()
@@ -52,8 +52,11 @@ extension SelectToolsTypeViewController: UICollectionViewDelegate, UICollectionV
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ballCollectionCollectionViewCell.identifier, for: indexPath) as! ballCollectionCollectionViewCell
         let imageURL = URL(string: balls[indexPath.row].sprites.default)
-        cell.configure(title: balls[indexPath.row].name, cellCornerRadius: view.frame.width / 5, imageURL: imageURL) {
-            print(indexPath)
+        
+        cell.configure(title: balls[indexPath.row].name, cellCornerRadius: view.frame.width / 5, imageURL: imageURL) { [weak self] in
+            guard let strongSelf = self else { return }
+            let nextVC = BallDetailViewController(ball: strongSelf.balls[indexPath.row])
+            strongSelf.show(nextVC, sender: nil)
         }
         return cell
     }
