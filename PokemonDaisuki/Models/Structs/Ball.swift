@@ -23,7 +23,6 @@ struct Ball: Decodable {
         let root = try decoder.container(keyedBy: CodingKeis.self)
         name = try root.decode(String.self, forKey: .name)
         sprites = try root.decode(BallImage.self, forKey: .sprites)
-        //self.effectEntries = EffectEntries(effect: "s")
         effectEntries = try root.decode([EffectEntries].self, forKey: .effectEntries)
     }
 }
