@@ -20,6 +20,8 @@
 		24BCB0FC276779F800E15C5B /* ballCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BCB0FB276779F800E15C5B /* ballCollectionCollectionViewCell.swift */; };
 		24BCB0FF27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BCB0FE27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib */; };
 		24BCB10127677C0200E15C5B /* SelectToolsTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */; };
+		24ED8D8627DC75E4006A7059 /* BallDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ED8D8527DC75E4006A7059 /* BallDetailViewController.swift */; };
+		24ED8D8827DC75F7006A7059 /* BallDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24ED8D8727DC75F7006A7059 /* BallDetailViewController.xib */; };
 		8A146D43277D77F400220F40 /* RegionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A146D41277D77F400220F40 /* RegionViewCell.swift */; };
 		8A146D44277D77F400220F40 /* RegionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A146D42277D77F400220F40 /* RegionViewCell.xib */; };
 		8A146D47277D86F500220F40 /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A146D46277D86F500220F40 /* RegionViewController.swift */; };
@@ -47,6 +49,8 @@
 		24BCB0FB276779F800E15C5B /* ballCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ballCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		24BCB0FE27677A7B00E15C5B /* ToolsTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolsTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectToolsTypeViewController.swift; sourceTree = "<group>"; };
+		24ED8D8527DC75E4006A7059 /* BallDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallDetailViewController.swift; sourceTree = "<group>"; };
+		24ED8D8727DC75F7006A7059 /* BallDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BallDetailViewController.xib; sourceTree = "<group>"; };
 		2DEE2F0B7C8E7F8267188B02 /* Pods-PokemonDaisuki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonDaisuki.release.xcconfig"; path = "Target Support Files/Pods-PokemonDaisuki/Pods-PokemonDaisuki.release.xcconfig"; sourceTree = "<group>"; };
 		8A146D41277D77F400220F40 /* RegionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewCell.swift; sourceTree = "<group>"; };
 		8A146D42277D77F400220F40 /* RegionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionViewCell.xib; sourceTree = "<group>"; };
@@ -129,8 +133,8 @@
 		24806B422746879800841A00 /* ToolDex */ = {
 			isa = PBXGroup;
 			children = (
-				24BCB10327677C1D00E15C5B /* Controllers */,
-				24BCB10227677C0A00E15C5B /* Views */,
+				24ED8D8227DC742B006A7059 /* BallDetails */,
+				24ED8D8127DC7420006A7059 /* BallList */,
 			);
 			path = ToolDex;
 			sourceTree = "<group>";
@@ -155,18 +159,44 @@
 		24BCB10227677C0A00E15C5B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */,
 				24BCB0FD27677A5C00E15C5B /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		24BCB10327677C1D00E15C5B /* Controllers */ = {
+		24BCB10327677C1D00E15C5B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				24BCB10027677C0200E15C5B /* SelectToolsTypeViewController.swift */,
+				24806B6D2748DCDD00841A00 /* SelectToolsType.storyboard */,
 			);
-			path = Controllers;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24ED8D8127DC7420006A7059 /* BallList */ = {
+			isa = PBXGroup;
+			children = (
+				24BCB10327677C1D00E15C5B /* Controller */,
+				24BCB10227677C0A00E15C5B /* Views */,
+			);
+			path = BallList;
+			sourceTree = "<group>";
+		};
+		24ED8D8227DC742B006A7059 /* BallDetails */ = {
+			isa = PBXGroup;
+			children = (
+				24ED8D8327DC7436006A7059 /* Controller */,
+			);
+			path = BallDetails;
+			sourceTree = "<group>";
+		};
+		24ED8D8327DC7436006A7059 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24ED8D8527DC75E4006A7059 /* BallDetailViewController.swift */,
+				24ED8D8727DC75F7006A7059 /* BallDetailViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		256510A3D2D8E73B1A4FF5DE /* Frameworks */ = {
@@ -296,6 +326,7 @@
 				24806B4527468C7500841A00 /* TabBar.storyboard in Resources */,
 				8A146D44277D77F400220F40 /* RegionViewCell.xib in Resources */,
 				24806B3A2743E81800841A00 /* LaunchScreen.storyboard in Resources */,
+				24ED8D8827DC75F7006A7059 /* BallDetailViewController.xib in Resources */,
 				24806B372743E81800841A00 /* Assets.xcassets in Resources */,
 				24806B6C2748DCA300841A00 /* ReadyForQuiz.storyboard in Resources */,
 				24806B702748DCEE00841A00 /* SelectRegion.storyboard in Resources */,
@@ -354,6 +385,7 @@
 			files = (
 				8A146D43277D77F400220F40 /* RegionViewCell.swift in Sources */,
 				24806B322743E81500841A00 /* ViewController.swift in Sources */,
+				24ED8D8627DC75E4006A7059 /* BallDetailViewController.swift in Sources */,
 				8A7AAE44276B3FC600E7E58D /* FetchAPIs.swift in Sources */,
 				8A9B7969275B987F004542ED /* Pokemon.swift in Sources */,
 				24BCB0FC276779F800E15C5B /* ballCollectionCollectionViewCell.swift in Sources */,
